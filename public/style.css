@@ -1,0 +1,22 @@
+body{
+  padding-top:80px;
+  word-wrap:break-word;
+}
+
+img{
+  height: 300px;
+}
+
+.testing{
+  display:flex;
+  margin:20px;
+}
+
+.oneImage{
+  margin:20px;
+}
+
+body{
+  background:url(img/backgroundOne.png) no-repeat;
+  background-size:cover;
+}
