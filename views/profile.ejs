@@ -3,15 +3,15 @@
 
 <head>
   <title>Image Board</title>
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="imageboardstyle.css">
 </head>
 
 <body>
-  <div class="container">
+  <div class="whole">
 
-    <div class="page-header text-center">
+    <div class="header">
       <h1></span> Image Board</h1>
       <a href="/logout" class="btn btn-default btn-sm">Logout</a>
     </div>
@@ -26,8 +26,10 @@
             <span><%= messages[i].likeAmount %></span>
             <span><i data-likeAmount="<%= messages[i].likeAmount %>" data-image="<%= messages[i]._id %>" class="fa fa-thumbs-up" aria-hidden="true"></i></span>
             <span><i data-likeAmount="<%= messages[i].likeAmount %>" data-image="<%= messages[i]._id %>" class="fa fa-thumbs-down" aria-hidden="true"></i></span>
+            <span><i data-starAmount="<%= messages[i].starAmt %>" data-image="<%= messages[i]._id %>" class="fa fa-star" aria-hidden="true"></i></span>
             <span><i data-image="<%= messages[i]._id %>" class="fa fa-trash" aria-hidden="true"></i></span>
           </section>
+          <span>Stars: <%= messages[i].starAmt %></span>
         </section>
       <% } %>
     </section>

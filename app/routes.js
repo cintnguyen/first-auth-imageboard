@@ -30,7 +30,7 @@ module.exports = function(app, passport, db) {
 // message board routes ===============================================================
 
     app.post('/messages', (req, res) => {
-      db.collection('messages').save({image: req.body.image, likeAmount: 0}, (err, result) => {
+      db.collection('messages').save({image: req.body.image, likeAmount: 0, starAmt:0}, (err, result) => {
         if (err) return console.log(err)
         console.log('saved to database')
         res.redirect('/profile')
@@ -42,6 +42,21 @@ module.exports = function(app, passport, db) {
       .findOneAndUpdate({_id: ObjectID(req.body.imageID)}, {
         $set: {
           likeAmount:req.body.likeAmount + 1
+        }
+      }, {
+        sort: {_id: -1},
+        upsert: true
+      }, (err, result) => {
+        if (err) return res.send(err)
+        res.send(result)
+      })
+    })
+
+    app.put('/messages/star', (req, res) => {
+      db.collection('messages')
+      .findOneAndUpdate({_id: ObjectID(req.body.imageID)}, {
+        $set: {
+          starAmt:req.body.starAmt + 1
         }
       }, {
         sort: {_id: -1},

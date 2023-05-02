@@ -19,4 +19,5 @@ img{
 body{
   background:url(img/backgroundOne.png) no-repeat;
   background-size:cover;
+  min-height:100vh;
 }
