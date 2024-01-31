@@ -2,10 +2,10 @@
 
 Unleash your creativity with Image Board! 🎨 A full-stack app that lets you dive into a world of endless inspiration where every image tells a story. Upload, like, and explore curated boards to spark your imagination. Join the community today and be part of the visual revolution!
 
-Check it out and let me know your thoughts! - X To demo a fully populated site, feel free to use these login credentials:
+Check it out and let me know your thoughts! - https://myimageboard.onrender.com/ To demo a fully populated site, feel free to use these login credentials:
 
-Email: cindy@gmail.com
-Password: testing
+- Email: cindy@gmail.com
+- Password: testing
 
 ## Tech Used:
 - Javascript, Node.js, Express, MongoDB, Passport, HTML, CSS
@@ -31,4 +31,4 @@ Password: testing
 ### Usage
 
 1. run `node server.js`
-2. Open [http://localhost:8080](http://localhost:8080) to view it in your browser
+2. Open [http://localhost:2000](http://localhost:2000) to view it in your browser
