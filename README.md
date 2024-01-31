@@ -10,7 +10,7 @@ Check it out and let me know your thoughts! - https://myimageboard.onrender.com/
 ## Tech Used:
 - Javascript, Node.js, Express, MongoDB, Passport, HTML, CSS
 
-![ImageBoard](public/img/readmeimg.png)
+![ImageBoard](public/img/readmeimage.png)
 
 ### Things I'm proud of:
 - I have always been a Pinterest / Tumblr girl at heart. So to build something that paid homage to these things was a huge milestone! I am a huge believer in community. And my hope with Image Board is that it fosters community centered around images and interactions. A place we can all go to inspire and be inspired.
